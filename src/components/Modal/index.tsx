@@ -34,6 +34,7 @@ const Container = styled.div`
 interface Props {
   isOpen: boolean;
   onClose: () => void;
+  children?: React.ReactNode | React.ReactNode[];
 }
 
 const Modal: React.FC<Props> = ({ children, onClose, isOpen }) => (
